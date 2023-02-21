@@ -15,10 +15,7 @@
     --color-black: #303030;
     --color-white: #fcfcfc;
     --color-light-gray: #eeeeee;
-    --color-gray: #e5e5e5;
-    --color-yellow: #ffcd1c;
-    --color-light-yellow: #fee48c;
-    --color-brown: #945633;
+    --color-accent: #FFAD30;
 }
 
 *,
@@ -33,7 +30,7 @@ html {
 }
 
 body {
-    font-family: "Montserrat", Monaco, sans-serif;
+    font-family: "Inconsolata", monospace;
     font-weight: 400;
     background-color: var(--color-white);
     margin: 0;
@@ -66,22 +63,22 @@ footer {
     align-items: center;
     justify-content: center;
     height: 150px;
-    background-color: var(--color-yellow);
+    background-color: var(--color-accent);
 }
 
-h1,
+h1 {
+    font-family: "Inconsolata", monospace;
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+}
+
 h2,
 h3,
 h4,
 h5 {
-    font-family: "Playfair Display", Georgia, serif;
-    font-weight: 700;
-}
-
-code {
-    font-family: "Inconsolata", Monaco, sans-serif;
+    font-family: "Inconsolata", monospace;
     font-weight: 600;
-    font-size: 16px;
 }
 
 img {
@@ -101,21 +98,24 @@ iframe {
 }
 
 pre {
+    background-color: #ddd;
     padding: 10px 20px
 }
 
-a.pdf {
-    color: var(--color-black);
-    font-family: "Montserrat", Monaco, sans-serif;
-    font-size: var(--fs-sm);
-    font-weight: 400;
-    margin-left: 20px;
+blockquote {
+    border-left: var(--color-accent) 3px solid;
+    padding: 1px 15px;
+    background-color: #eee;
+}
+
+code {
+    background-color: #ddd;
 }
 
 div.iframe-container {
     width: 90%;
     margin: auto;
-    max-width: var(--md-width);
+    max-width: var(--sm-width);
     height: 600px;
 }
 
@@ -141,7 +141,7 @@ div.iframe-container {
 }
 
 .fun-letter:hover {
-    color: var(--color-yellow)
+    color: var(--color-accent)
 }
 
 .shake:hover {
@@ -190,8 +190,8 @@ span.nav-link {
 }
 
 span.nav-link > a {
-    font-family: "Playfair Display", Georgia, serif;
-    font-weight: 700;
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
     font-size: var(--fs-md);
     text-decoration: none;
     color: var(--color-black);
@@ -199,7 +199,7 @@ span.nav-link > a {
 
 span.nav-link > a:hover {
     text-decoration: underline;
-    text-decoration-color: var(--color-yellow);
+    text-decoration-color: var(--color-accent);
 }
 
 div.navholder-mobile {
@@ -248,10 +248,10 @@ span.hamburger {
 
     div.navholder-content > a {
         display: block;
-        font-family: "Playfair Display", Georgia, serif;
-        font-weight: 700;
+        font-family: "Inconsolata", monospace;
+        font-weight: 600;
         font-size: var(--fs-lg);
-        text-decoration-color: var(--color-yellow);
+        text-decoration-color: var(--color-accent);
         color: var(--color-black);
         padding: 8px;
     }
@@ -311,47 +311,6 @@ h2.landing-subtitle {
 }
 
 /* =================================== */
-/* HEXAGON */
-/* =================================== */
-
-.hexagon {
-    position: absolute;
-    z-index: -1;
-    margin-left: -15px;
-    width: 60px;
-    height: 34.64px;
-    background-color: var(--color-light-yellow);
-    opacity: 0.6;
-    transform: scale(1);
-    transition: opacity ease-in-out 0.25s, transform ease-in-out 0.25s;
-}
-
-section:hover > div.hexagon {
-    transform: scale(1.1);
-    opacity: 1;
-}
-
-.hexagon:before,
-.hexagon:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-}
-
-.hexagon:before {
-    bottom: 100%;
-    border-bottom: 17.32px solid var(--color-light-yellow);
-}
-
-.hexagon:after {
-    top: 100%;
-    width: 0;
-    border-top: 17.32px solid var(--color-light-yellow);
-}
-
-/* =================================== */
 /* TABLE */
 /* =================================== */
 
@@ -359,6 +318,7 @@ table {
     width: 90%;
     max-width: var(--md-width);
     margin: 50px auto;
+    table-layout: fixed;
 }
 
 th,
@@ -368,7 +328,7 @@ td {
 }
 
 th {
-    font-family: "Playfair Display", Georgia, serif;
+    font-family: "Inconsolata", monospace;
     font-size: var(--fs-md);
     background-color: var(--color-gray);
 }
@@ -379,12 +339,12 @@ td {
     transition: background-color linear 0.1s;
 }
 
-tr:hover > td {
-    background-color: var(--color-gray);
+tr:nth-child(odd) td {
+    background-color: lightgrey;
 }
 
-td > a {
-    color: var(--color-black)
+tr:nth-child(even) td {
+    background-color: #f2f2f2;
 }
 
 @media screen and (max-width: 768px) {
