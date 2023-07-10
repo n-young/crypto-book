@@ -43,14 +43,14 @@ body {
 main {
     margin: auto;
     width: 90%;
-    max-width: var(--lg-width);
+    max-width: var(--md-width);
     min-height: 80vh;
 }
 
 article {
     margin: auto;
     width: 90%;
-    max-width: var(--md-width);
+    max-width: var(--sm-width);
     min-height: 80vh;
 }
 
@@ -316,7 +316,7 @@ h2.landing-subtitle {
 
 table {
     width: 90%;
-    max-width: var(--md-width);
+    max-width: var(--sm-width);
     margin: 50px auto;
     table-layout: fixed;
 }

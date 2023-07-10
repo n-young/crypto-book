@@ -1,6 +1,6 @@
 chapters:
-  - title: Introduction
-    id: intro
+  - title: Mathematical Foundations
+    id: math
   - title: Private Key Cryptography
     id: priv
   - title: Public Key Cryptography

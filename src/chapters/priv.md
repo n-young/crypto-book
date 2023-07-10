@@ -3,6 +3,8 @@ title: Private Key Cryptography
 name: priv
 ---
 
+TODO: basic game notions (also pub)
+
 ## Block Ciphers
 
 Often, we wish to encrypt large amounts of data without having to generate new secret keys each time nor comprimising the security of our existing key. A **block cipher** is an encryption scheme that works on fixed-length **blocks** at a time. They are very useful for encrypting large or arbitrary-length data, such as messages or videos. **AES (Advanced Encryption Standard)** is one such block cipher. It was adopted by NIST in 2001 after winning a 5-year public competition to become the new standard secure block cipher. To use AES, simply provide it with a message and a suitable key; it will then output the ciphertext (the API for AES is quite simple despite its complexity). The inner workings of AES are extremely complicated and out of scope for this class.

@@ -1,11 +1,11 @@
 ---
-title: Introduction
-name: intro
+title: Mathematical Foundations
+name: math
 ---
 
 # Welcome!
 
-Welcome to this short webbook on modern cryptographic techniques! My goal in writing this book is primarily to provide an accessible, understandable, centralized place to explain as much about cryptography as I can. I've split this book up into relatively isolated chapters - that being said, reading in order is recommended.
+Welcome to this short web book on modern cryptographic techniques! My goal in writing this book is primarily to provide an accessible, understandable, centralized place to explain as much about cryptography as I can. I've split this book up into relatively isolated chapters - that being said, reading in order is recommended.
 
 Throughout the chapters, we will go over the classical, everyday cryptography that many of us are used to, and then cover more advanced, modern topics with more specialized applications. Indeed, we are currently experiencing a renaissance of sorts in the cryptographic community with blockchain technology and consumer privacy fuelling much of the excitement. While these facets are indeed interesting and we will draw from them to motivate some of our applications, they are not the focus of this book. We will stick to the cryptography itself.
 
